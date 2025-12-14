@@ -158,3 +158,38 @@ for (let i = 1; i <= rows; i++) {
 
 // select & changes the content in the HTML where id = "waterTable"
 document.getElementById("waterTable").appendChild(waterTable);
+
+
+// //--------------- Creating table to display output values(bottom to top) -----------------//
+
+// // create a table to display the output
+// let waterTable = document.createElement("table");
+
+// // creating rows for the table
+// for (let i = rows; i > 0; i--) {
+
+//     // create a table row element & store in a variable. Later can add columns.
+//     let tr = document.createElement("tr");
+
+//     // creating columns for the table
+//     for (let j = 0; j < columns; j++) {
+
+//         // create a table cell/column & store in a variable. Later can add text / CSS styles.
+//         let td = document.createElement("td");
+
+//         // checking the cell is filled with water
+//         if (waterAt[j] >= i) {
+//             td.classList.add("water");  // water CSS applied (water)
+//         }
+
+//         // add table cell to the current row (left to right)
+//         tr.appendChild(td);
+
+//     }
+
+//     // add the current row to the table (bottom to top)
+//     waterTable.appendChild(tr);
+// }
+
+// // select & changes the content in the HTML where id = "waterTable"
+// document.getElementById("waterTable").appendChild(waterTable);
